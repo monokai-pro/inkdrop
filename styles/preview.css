@@ -8,7 +8,7 @@
    */
   :root {
     /* Link */
-    --mde-preview-link-color: hsl(var(--hsl-monokai-blue));
+    --mde-preview-link-color: hsl(var(--hsl-monokai-yellow));
 
     /* Headings */
     --mde-preview-heading-color: hsl(var(--hsl-monokai-fg));
