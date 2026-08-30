@@ -38,7 +38,7 @@
     --link-hover-color: hsl(var(--hsl-monokai-blue));
 
     /* Borders — a token with alpha via the --hsl-* companion */
-    --border-color: hsl(var(--hsl-monokai-dark-gray) / 10%);
+    --border-color: hsl(var(--hsl-monokai-border) / 15%);
     --strong-border-color: hsl(var(--hsl-monokai-dark-gray) / 22%);
     --internal-border-color: hsl(var(--hsl-monokai-dark-gray) / 10%);
     --selected-border-color: hsl(var(--hsl-monokai-dark-gray) / 35%);
