@@ -1,0 +1,72 @@
+@layer theme.preview {
+  /*
+   * inkdrop-monokai-dark — Inkdrop Markdown preview theme.
+   *
+   * Override the CSS variables to restyle the rendered preview
+   * (links, code blocks, tables, headings, …).
+   * Check out https://github.com/inkdropapp/css/blob/main/markdown.css for available variables.
+   */
+  :root {
+    /* Link */
+    --mde-preview-link-color: hsl(var(--hsl-monokai-blue));
+
+    /* Headings */
+    --mde-preview-heading-color: hsl(var(--hsl-monokai-fg));
+
+    /* Blockquote */
+    --mde-preview-blockquote-text-color: hsl(var(--hsl-monokai-blockquote));
+    --mde-preview-blockquote-border-color: hsl(var(--hsl-monokai-blockquote) / 30%);
+
+    /* Table */
+    --mde-preview-table-head-text-color: hsl(var(--hsl-monokai-fg));
+    --mde-preview-table-head-background-color: hsl(var(--hsl-monokai-dark-gray) / 60%);
+    --mde-preview-table-row-background-color: hsl(var(--hsl-monokai-editor-bg) / 80%);
+    --mde-preview-table-row-stripe-background-color: hsl(var(--hsl-monokai-dark-gray) / 20%);
+
+    /* Checkbox */
+
+    /* Code block */
+    --mde-preview-codeblock-background-color: hsl(var(--hsl-monokai-code-bg) / 80%);
+    --mde-preview-codeblock-meta-background-color: hsl(var(--hsl-monokai-dark-gray) / 30%);
+    --mde-preview-inline-code-text-color: hsl(var(--hsl-monokai-fg));
+    --mde-preview-inline-code-background-color: hsl(var(--hsl-monokai-dark-gray));
+  }
+
+  .task-list-item.checked {
+    accent-color: hsl(var(--hsl-monokai-primary) / 80%);
+    color: hsl(var(--hsl-monokai-light-gray));
+  }
+
+  .mde-preview {
+    .gfm-alert-type-note {
+      > p.gfm-alert-title {
+        color: hsl(var(--hsl-monokai-blue) / 80%);
+      }
+      border-color: hsl(var(--hsl-monokai-blue) / 80%);
+    }
+    .gfm-alert-type-tip {
+      > p.gfm-alert-title {
+        color: hsl(var(--hsl-monokai-green) / 80%);
+      }
+      border-color: hsl(var(--hsl-monokai-green) / 80%);
+    }
+    .gfm-alert-type-important {
+      > p.gfm-alert-title {
+        color: hsl(var(--hsl-monokai-purple) / 80%);
+      }
+      border-color: hsl(var(--hsl-monokai-purple) / 80%);
+    }
+    .gfm-alert-type-warning {
+      > p.gfm-alert-title {
+        color: hsl(var(--hsl-monokai-orange) / 80%);
+      }
+      border-color: hsl(var(--hsl-monokai-orange) / 80%);
+    }
+    .gfm-alert-type-caution {
+      > p.gfm-alert-title {
+        color: hsl(var(--hsl-monokai-pink) / 80%);
+      }
+      border-color: hsl(var(--hsl-monokai-pink) / 80%);
+    }
+  }
+}

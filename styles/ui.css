@@ -1,0 +1,108 @@
+@layer theme.ui {
+  /*
+   * inkdrop-monokai-dark — Inkdrop UI theme.
+   *
+   * Override Inkdrop's semantic CSS variables to restyle the app chrome (page,
+   * sidebar, note list, editor, inputs, …).
+   * Check out https://github.com/inkdropapp/css/blob/main/ui.css for available variables.
+   */
+  :root {
+
+    /* Emotive Colors */
+    --positive-color: hsl(var(--hsl-monokai-green));
+    --negative-color: hsl(var(--hsl-monokai-pink));
+    --info-color: hsl(var(--hsl-monokai-blue));
+    --warning-color: hsl(var(--hsl-monokai-orange));
+
+    /* Brand Colors */
+    --primary-color: hsl(var(--hsl-monokai-primary) / 80%);
+    --secondary-color: hsl(var(--hsl-monokai-secondary) / 80%);
+
+    /* Hover */
+    --primary-color-hover: hsl(var(--hsl-monokai-primary));
+    --secondary-color-hover: hsl(var(--hsl-monokai-secondary));
+
+    /* Form Input */
+    --input-background: hsl(var(--hsl-monokai-input-bg));
+
+    /* Focused Inputs */
+    --focused-form-border-color: color-mix(in srgb, hsl(var(--hsl-monokai-primary)) 60%, transparent);
+    --focused-form-muted-border-color: var(--focused-form-border-color);
+    --focused-outline-color: var(--focused-form-border-color);
+
+    /* Page */
+    --page-background: hsl(var(--hsl-monokai-page-bg));
+    --text-color: hsl(var(--hsl-monokai-fg));
+
+    /* Links */
+    --link-hover-color: hsl(var(--hsl-monokai-blue));
+
+    /* Borders — a token with alpha via the --hsl-* companion */
+    --border-color: hsl(var(--hsl-monokai-dark-gray) / 10%);
+    --strong-border-color: hsl(var(--hsl-monokai-dark-gray) / 22%);
+    --internal-border-color: hsl(var(--hsl-monokai-dark-gray) / 10%);
+    --selected-border-color: hsl(var(--hsl-monokai-dark-gray) / 35%);
+    --strong-selected-border-color: hsl(var(--hsl-monokai-dark-gray) / 50%);
+    --disabled-border-color: hsl(var(--hsl-monokai-dark-gray) / 50%);
+
+    /* Button */
+      /* Hovered */
+    /* --button-hover-background-color: hsl(var(--hsl-monokai-secondary)); */
+    /* --button-hover-background-image: none; */
+    /* --button-hover-box-shadow: hsl(var(--hsl-monokai-secondary)); */
+    /* --button-hover-color: hsl(var(--hsl-monokai-secondary)); */
+    /* --button-hover-icon-opacity: 0.85; */
+
+    /* Focused */
+    /* --button-focus-background-color: hsl(var(--hsl-monokai-secondary)); */
+    /* --button-focus-background-image: ''; */
+    /* --button-focus-box-shadow: ''; */
+    /* --button-focus-color: hsl(var(--hsl-monokai-secondary)); */
+    /* --button-icon-focus-opacity: 0.85; */
+
+    /* Input */
+    --input-focus-border-color: hsl(var(--hsl-monokai-primary));
+
+    /* Popup */
+    --popup-border-color: hsl(var(--hsl-monokai-border));
+    --popup-background: hsl(var(--hsl-monokai-note-list-bg));
+
+    /* Checkbox */
+    --toggle-on-focus-lane-color: hsl(var(--hsl-monokai-primary));
+
+    /* Sidebar */
+    --sidebar-background: hsl(var(--hsl-monokai-sidebar-bg));
+    --sidebar-menu-item-active-background: color-mix(in srgb, hsl(var(--hsl-monokai-primary)) 85%, transparent);
+    --sidebar-menu-item-inactive-background: hsl(var(--hsl-monokai-active-bg) / 7%);
+
+    /* Note list */
+    --note-list-bar-background: hsl(var(--hsl-monokai-note-list-bg));
+    --note-list-view-item-active-background: color-mix(in srgb, hsl(var(--hsl-monokai-primary)) 85%, transparent);
+    --note-list-view-item-selected-background: hsl(var(--hsl-monokai-active-bg) / 7%);
+
+    /* Editor */
+    --editor-background: hsl(var(--hsl-monokai-editor-bg));
+
+    /* Preferences */
+    --preferences-sidebar-background: hsl(var(--hsl-monokai-sidebar-bg));
+    --preferences-sidebar-item-active-background: hsl(var(--hsl-monokai-active-bg) / 7%);
+    --preferences-view-background: hsl(var(--hsl-monokai-note-list-bg));
+  }
+
+  /* Acrylic background window */
+  :root:has(body.acrylic-window) {
+    --page-background: transparent;
+    --sidebar-background: hsl(var(--hsl-monokai-sidebar-bg) / 70%);
+    --note-list-bar-background: hsl(var(--hsl-monokai-note-list-bg) / 70%);
+    --editor-background: hsl(var(--hsl-monokai-editor-bg) / 70%);
+    --editor-drawer-background: hsl(var(--hsl-monokai-input-bg) / 90%);
+    --inline-dropdown-menu-background: hsl(var(--hsl-monokai-input-bg));
+  }
+
+  /* Windows with acrylic background on dark mode */
+  :root:has(body.acrylic-window[class*='dark-ui'].platform-win32),
+  :root:has(body.dark-mode.acrylic-window.platform-win32) {
+    /* --sidebar-background: hsl(0 0 0 / 50%); */
+    --page-background: hsl(0 0 0 / 40%);
+  }
+}

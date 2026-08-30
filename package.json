@@ -1,0 +1,30 @@
+{
+  "name": "monokai-pro-ce",
+  "version": "1.0.0",
+  "theme": true,
+  "themeAppearance": "dark",
+  "type": "module",
+  "description": "A Monokai Pro (CE) theme for Inkdrop.",
+  "styleSheets": [
+    "palette.css",
+    "ui.css",
+    "syntax.css",
+    "preview.css"
+  ],
+  "keywords": [
+    "inkdrop",
+    "theme"
+  ],
+  "repository": "https://github.com/fffive/inkdrop-monokai-pro-ce",
+  "author": "Yu Ogawa",
+  "license": "MIT",
+  "scripts": {
+    "prepublishOnly": "generate-palette"
+  },
+  "devDependencies": {
+    "@inkdropapp/theme-dev-helpers": "^0.6.1"
+  },
+  "engines": {
+    "inkdrop": "^6.0.0"
+  }
+}

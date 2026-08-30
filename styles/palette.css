@@ -1,0 +1,28 @@
+@layer theme {
+    :root {
+        /* Color palette */
+        --hsl-monokai-pink: 344 100% 69%;
+        --hsl-monokai-blue: 188 70% 70%;
+        --hsl-monokai-green: 93 50% 70%;
+        --hsl-monokai-yellow: 40 100% 70%;
+        --hsl-monokai-orange: 23 92% 66%;
+        --hsl-monokai-purple: 250 60% 75%;
+        --hsl-monokai-light-gray: 300 0% 57%;
+        --hsl-monokai-dark-gray: 285 2% 25%;
+        
+        --hsl-monokai-primary: var(--hsl-monokai-yellow);
+        --hsl-monokai-secondary: var(--hsl-monokai-pink);
+
+        --hsl-monokai-fg: 60 25% 95%;
+        --hsl-monokai-border: var(--hsl-monokai-dark-gray);
+        --hsl-monokai-blockquote: 240 5% 48%;
+        --hsl-monokai-input-bg: 280 2% 25%;
+        --hsl-monokai-page-bg: 285 2% 18%;
+        --hsl-monokai-code-bg: 285 2% 14%;
+        --hsl-monokai-sidebar-bg: 270 4% 10%;
+        --hsl-monokai-note-list-bg: 300 5% 13%;
+        --hsl-monokai-editor-bg: 285 5% 16%;
+        
+        --hsl-monokai-active-bg: 0 0% 100%;
+    }
+}
