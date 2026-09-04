@@ -1,7 +1,7 @@
 # Monokai Pro (CE) for [Inkdrop](https://www.inkdrop.app/)
 
 ![Screenshot_1](screenshot_1.png)
-![Screenshot_2](screenshot_2.png)
+![Screenshot_2](screenshot.png)
 
 ## About this theme
 
