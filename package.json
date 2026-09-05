@@ -15,7 +15,7 @@
     "inkdrop",
     "theme"
   ],
-  "repository": "https://github.com/fffive/inkdrop-monokai-pro-ce",
+  "repository": "https://github.com/monokai-pro/inkdrop",
   "author": "Yu Ogawa",
   "license": "MIT",
   "scripts": {
