@@ -7,6 +7,8 @@
 
 This Monokai Pro Community Edition (CE) theme is maintained by [Yu Ogawa](https://github.com/fffive) and is based on the original [Monokai Pro](https://monokai.pro) theme.
 
+Note: This theme was developed and tested using Windows 11. Operation on other OS cannot be guaranteed.
+
 [Installation instructions](INSTALL.md)
 
 [MIT License](LICENSE.md)
