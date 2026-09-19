@@ -5,7 +5,7 @@
 [Inkdrop Start Guide](https://docs.inkdrop.app/start-guide)
 
 ```sh
-ipm install monokai-dark
+ipm install monokai-pro-ce
 ```
 
 ### Activating theme
